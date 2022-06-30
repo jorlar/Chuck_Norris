@@ -1,4 +1,4 @@
 # Chuck Norris Generator
 Simple tool to fetch jokes with XHR
 
-### [link to project](fortunate-reaction.surge.sh)
+### [link to project](https://fortunate-reaction.surge.sh/)
