@@ -9,9 +9,7 @@ async function getJokes(e) {
     let output = '';
 
     if(respons.type === 'success') {
-        // respons.value.forEach(function(joke){
-        //     output += `<li>${joke.joke}</li>`;
-        // });
+        
         respons.value.forEach((value)=> {
             output += `<li>${value.joke}</li>`;
         })
@@ -20,21 +18,5 @@ async function getJokes(e) {
     }
 
     document.querySelector('.jokes').innerHTML = output;
-    
-
-    // const xhr = new XMLHttpRequest();
-
-    // xhr.open('GET', `http://api.icndb.com/jokes/random/${number}`, true);
-
-    // xhr.onload = function(){
-    //     if(this.status === 200) {
-    //         const respons = JSON.parse(this.responseText);
-
-
-    //     }
-    // }
-
-    // xhr.send();
-
-    
+       
 }
